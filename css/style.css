@@ -1,0 +1,128 @@
+body {
+  display: grid;
+  grid-template-columns: 72px 240px 1fr;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-base);
+}
+
+#primaryNav {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 12px 0;
+  justify-content: center;
+  background: var(--surface-top-base);
+}
+
+.sidebar {
+  background: var(--surface-secondary-base);
+  display: grid;
+  grid-template-rows: auto 1fr 53px;
+}
+
+#sidebarMenuBtn {
+  color: var(--grey-100);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--surface-top-base);
+  align-items: center;
+  transition: 150ms;
+}
+
+#sidebarMenuBtn:hover {
+  background: var(--surface-secondary-hover);
+}
+
+#sidebarChannels {
+  overflow-y: scroll;
+  scrollbar-color: var(--surface-secondary-hover) var(--surface-secondary-base);
+}
+
+main {
+  background: var(--surface-primary-base);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr auto;
+}
+
+.mainHeader {
+  grid-column: 1 / span 2;
+  display: flex;
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--surface-top-base);
+}
+
+.mainHeader .title {
+  flex: 1;
+}
+
+.mainHeader .actions {
+  font-size: 20px;
+  display: flex;
+}
+
+.mainHeader .actions .active {
+  color: var(--text-active);
+}
+
+.mainHeader .actions button {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#chatSection {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+#messages {
+  overflow-y: scroll;
+  scrollbar-color: var(--surface-secondary-hover) var(--surface-secondary-base);
+}
+
+#inputArea {
+  background: var(--surface-tertiary-base);
+  display: flex;
+  margin-bottom: 28px;
+  margin-inline: 16px;
+  border-radius: 8px;
+}
+
+.darkMode #inputArea {
+  background: var(--surface-bottom-base);
+}
+
+#inputArea i {
+  font-size: 22px;
+  padding: 8px;
+  transition: 150ms;
+}
+
+#inputArea i:hover {
+  color: var(--text-active);
+}
+
+#inputArea #messageBar {
+  border: none;
+  background: none;
+  color: var(--text-base);
+  font-size: 16px;
+  padding-block: 12px;
+  width: 100%;
+  flex: 1;
+}
+
+#memberList {
+  display: none;
+  background: var(--surface-secondary-base);
+  width: 240px;
+  overflow-y: scroll;
+  scrollbar-color: var(--surface-secondary-hover) var(--surface-secondary-base);
+}
+
+#userArea {
+  background: var(--surface-tertiary-base);
+}

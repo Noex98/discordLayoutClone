@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord clone</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components/darkmodeToggle.css" />
+    <script type="module" src="./js/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/dbb442b10d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="darkMode">
+    <nav id="primaryNav">
+      <div></div>
+
+      <div id="">
+        <input type="checkbox" class="checkbox" id="darkModeCheckbox" />
+        <label for="darkModeCheckbox" class="checkbox-label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <span class="ball"></span>
+        </label>
+      </div>
+    </nav>
+    <div class="sidebar">
+      <button type="button" id="sidebarMenuBtn">
+        challenge400days
+        <i class="fa fa-chevron-down"></i>
+      </button>
+
+      <div id="sidebarChannels"></div>
+      <div id="userArea"></div>
+    </div>
+    <main>
+      <div class="mainHeader">
+        <div class="title">Coding and stuff</div>
+        <div class="actions">
+          <button>
+            <i class="fa-solid fa-bell"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-thumbtack"></i>
+          </button>
+          <button id="toggleMemberListBtn">
+            <i class="fa-solid fa-user-group"></i>
+          </button>
+        </div>
+      </div>
+      <div id="chatSection">
+        <div id="messages"></div>
+        <div id="inputArea">
+          <button>
+            <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <input id="messageBar" type="text" placeholder="Send message" />
+          <button>
+            <i class="fa-solid fa-gift"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-note-sticky"></i>
+          </button>
+        </div>
+      </div>
+      <aside id="memberList"></aside>
+    </main>
+  </body>
+</html>

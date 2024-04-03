@@ -1,0 +1,60 @@
+:root {
+  /* Primitive layer */
+
+  /* Tokens used in darkmode */
+  --dark-grey-800: #1e1f22;
+  --dark-grey-700: #232428;
+  --dark-grey-600: #2b2d31;
+  --dark-grey-500: #313338;
+  --dark-grey-400: #383a40;
+  --dark-grey-200: #b5bac1;
+  --dark-grey-100: #f2f3f5;
+
+  /* Tokens used in lightmode*/
+  --light-grey-800: #060607;
+  --light-grey-700: #5c5366;
+  --light-grey-600: #c4c9ce;
+
+  --light-grey-500: #e3e5e8;
+  --light-grey-400: #dfe1e5;
+  --light-grey-300: #ebedef;
+  --light-grey-200: #f2f3f5;
+  --light-grey-100: #f7f7f7;
+
+  --white: white;
+}
+
+.lightMode {
+  /* Surfaces  */
+  --surface-primary-base: --white;
+  --surface-primary-hover: var(--light-grey-100);
+
+  --surface-secondary-base: var(--light-grey-200);
+  --surface-secondary-hover: var(--light-grey-400);
+
+  --surface-tertiary-base: var(--light-grey-300);
+  --surface-top-base: var(--light-grey-500);
+
+  /* Text */
+  --text-active: var(--light-grey-800);
+  --text-base: var(--light-grey-700);
+  --text-passive: var(--light-grey-600);
+}
+
+.darkMode {
+  /* Surfaces  */
+  --surface-primary-base: var(--dark-grey-500);
+  --surface-primary-hover: var(--dark-grey-600);
+
+  --surface-secondary-base: var(--dark-grey-600);
+  --surface-secondary-hover: var(--dark-grey-700);
+
+  --surface-tertiary-base: var(--dark-grey-700);
+  --surface-top-base: var(--dark-grey-800);
+  --surface-bottom-base: var(--dark-grey-400); /* Darkmode unique */
+
+  /* Text */
+  --text-active: white;
+  --text-base: var(--light-grey-300);
+  --text-passive: var(--light-grey-400);
+}
